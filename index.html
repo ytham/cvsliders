@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>CV Debug Interface</title>
+    <link rel="stylesheet" type="text/css" href="cvsliders.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="./lib/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div id="title">CV HSV Sliders</div><br>
+
+    <video id="video" autoplay></video>
+    <canvas id="inputVideo"></canvas>
+    <canvas id="canvas"></canvas><br>
+ 
+    <div id="sliders">
+      H <div id="hSlider" class="slider"></div>
+      <input type="text" id="hValue1"> - <input type="text" id="hValue2"><br>
+
+      S <div id="sSlider" class="slider"></div>
+      <input type="text" id="sValue1"> - <input type="text" id="sValue2"><br>
+
+      V <div id="vSlider" class="slider"></div>
+      <input type="text" id="vValue1"> - <input type="text" id="vValue2"><br>
+    </div>
+
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>  
+  <script type="text/javascript" src="cvweb.js"></script>
+
+</html>
